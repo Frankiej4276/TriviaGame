@@ -1,0 +1,27 @@
+.jumbotron{
+    box-sizing: 200px;
+    border: solid 10px;
+}
+h1{
+    text-align: center;
+}
+#start{
+    align-content: center;
+}
+body{
+    background-color: antiquewhite;
+}
+#timeRemaining{
+    text-align: center;
+}
+#quiz{
+    background-color: aliceblue;
+}
+.containerJumbotron{
+    background-color: aliceblue;
+    box-sizing: 100px;
+    border: solid 10px;
+}
+p{
+    text-align: center;
+}

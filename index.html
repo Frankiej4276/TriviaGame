@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TriviaGame</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<div class="containerJumbotron">
+			<h1>Legend of Trivia!</h1>
+			<br>
+			<br>
+			<p>
+				<button type="button" class="startButton btn btn-md"  id="start">Begin</button>
+			</p>
+		</div>
+    </div>
+    
+    <!-- Div will show after clicking Begin -->
+	<div hidden class="main-body">
+	<div class="jumbotron" id="quiz">
+		<br>
+    		<br>
+    		<p>Time Remaining: <span id="timeRemaining">30</span></p>
+    		<br>
+            <br>
+            
+            <!-- Trivia Questions -->
+		<div class="container">
+  				<p> 1. When was the first Legend of Zelda Released?</p>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">1984</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true">1986</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">1996</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">1987</label>
+		</div>
+		<br>
+		<br>
+			
+		<div class="container">
+  				<p> 2. What is the name of the main protaginist?</p>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false" >Zelda</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Ganondorf</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Sheik</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true">Link</label>
+			</div>
+			<br>
+			<br>
+			
+		<div class="container">
+  				<p> 3. What is the name of the weapon that banishes all evil?</p>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Kokiri Sword</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Goron Sword</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Hylian Sword</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true">Master Sword</label>
+		</div>
+		<br>
+        <br>
+        
+		<div class="container">
+  				<p> 4. What company created the Legend of Zelda franchise?</p>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true">Nintendo</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Microsoft</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Sony</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Sega</label>
+		</div>
+		<br>
+		<br>
+			
+		<div class="container">			 
+  				<p> 5. What is the kingdom that resides within the universe of the Legend of Zelda?</p>
+    				<label class="radio-inline"><input class="button-question" type="radio" value="false">Narnia</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">Terabithia</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="true">Hyrule</label>
+  					<label class="radio-inline"><input class="button-question" type="radio" value="false">MorrowWind</label>
+		</div>
+			<br>
+			<br>
+			<br>
+			 <p>
+  				<button type="button" class="btn btn-primary btn-lg" id="submit">Submit</button>
+			</p>
+	</div>
+</div>		
+    </div>
+    <!-- Results will show after game completion -->
+	<div hidden class="container jumbotron" id="results">
+		<br>
+    		<br>
+    		<p>Results</p>
+    		<br>
+            <p>Unanswered: <span id="noAnswer"></span></p>
+    		<p>Correct Answers: <span id="rightAnswer"></span></p>
+            <p>Incorrect Answers: <span id="wrongAnswer"></span></p>
+            
+            <!-- Does not restart game properly -->
+            <p>
+				<button type="button" class="againButton btn btn-md"  id="again">Again?</button>
+			</p>
+            
+  		</div>
+	</div>
+
+</body>
+</html>
